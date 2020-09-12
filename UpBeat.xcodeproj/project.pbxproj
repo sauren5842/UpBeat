@@ -13,7 +13,58 @@
 		8D5A4830250C777A00A7C37C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A482F250C777A00A7C37C /* Assets.xcassets */; };
 		8D5A4833250C777A00A7C37C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A4832250C777A00A7C37C /* Preview Assets.xcassets */; };
 		8D5A4836250C777A00A7C37C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A4834250C777A00A7C37C /* LaunchScreen.storyboard */; };
+		8D5A4872250C791600A7C37C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A4870250C791600A7C37C /* Interface.storyboard */; };
+		8D5A4874250C791C00A7C37C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A4873250C791C00A7C37C /* Assets.xcassets */; };
+		8D5A487B250C791C00A7C37C /* UpBeat Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8D5A487A250C791C00A7C37C /* UpBeat Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8D5A4880250C791C00A7C37C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A487F250C791C00A7C37C /* ContentView.swift */; };
+		8D5A4882250C791C00A7C37C /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A4881250C791C00A7C37C /* HostingController.swift */; };
+		8D5A4884250C791C00A7C37C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A4883250C791C00A7C37C /* ExtensionDelegate.swift */; };
+		8D5A4886250C792100A7C37C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A4885250C792100A7C37C /* Assets.xcassets */; };
+		8D5A4889250C792200A7C37C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A4888250C792100A7C37C /* Preview Assets.xcassets */; };
+		8D5A488D250C792200A7C37C /* UpBeat Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8D5A486E250C791600A7C37C /* UpBeat Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D5A487C250C791C00A7C37C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D5A481E250C777800A7C37C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5A4879250C791C00A7C37C;
+			remoteInfo = "UpBeat Watch Extension";
+		};
+		8D5A488B250C792200A7C37C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D5A481E250C777800A7C37C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5A486D250C791600A7C37C;
+			remoteInfo = "UpBeat Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8D5A488E250C792200A7C37C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8D5A488D250C792200A7C37C /* UpBeat Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5A4891250C792200A7C37C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8D5A487B250C791C00A7C37C /* UpBeat Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8D5A4826250C777800A7C37C /* UpBeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpBeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +75,28 @@
 		8D5A4832250C777A00A7C37C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D5A4835250C777A00A7C37C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D5A4837250C777A00A7C37C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D5A486E250C791600A7C37C /* UpBeat Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UpBeat Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5A4871250C791600A7C37C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8D5A4873250C791C00A7C37C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D5A4875250C791C00A7C37C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D5A487A250C791C00A7C37C /* UpBeat Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "UpBeat Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5A487F250C791C00A7C37C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8D5A4881250C791C00A7C37C /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		8D5A4883250C791C00A7C37C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8D5A4885250C792100A7C37C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D5A4888250C792100A7C37C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D5A488A250C792200A7C37C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8D5A4823250C777800A7C37C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5A4877250C791C00A7C37C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				8D5A4828250C777800A7C37C /* UpBeat */,
+				8D5A486F250C791600A7C37C /* UpBeat Watch */,
+				8D5A487E250C791C00A7C37C /* UpBeat Watch Extension */,
 				8D5A4827250C777800A7C37C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				8D5A4826250C777800A7C37C /* UpBeat.app */,
+				8D5A486E250C791600A7C37C /* UpBeat Watch.app */,
+				8D5A487A250C791C00A7C37C /* UpBeat Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +148,37 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8D5A486F250C791600A7C37C /* UpBeat Watch */ = {
+			isa = PBXGroup;
+			children = (
+				8D5A4870250C791600A7C37C /* Interface.storyboard */,
+				8D5A4873250C791C00A7C37C /* Assets.xcassets */,
+				8D5A4875250C791C00A7C37C /* Info.plist */,
+			);
+			path = "UpBeat Watch";
+			sourceTree = "<group>";
+		};
+		8D5A487E250C791C00A7C37C /* UpBeat Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8D5A487F250C791C00A7C37C /* ContentView.swift */,
+				8D5A4881250C791C00A7C37C /* HostingController.swift */,
+				8D5A4883250C791C00A7C37C /* ExtensionDelegate.swift */,
+				8D5A4885250C792100A7C37C /* Assets.xcassets */,
+				8D5A488A250C792200A7C37C /* Info.plist */,
+				8D5A4887250C792100A7C37C /* Preview Content */,
+			);
+			path = "UpBeat Watch Extension";
+			sourceTree = "<group>";
+		};
+		8D5A4887250C792100A7C37C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8D5A4888250C792100A7C37C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,15 +189,51 @@
 				8D5A4822250C777800A7C37C /* Sources */,
 				8D5A4823250C777800A7C37C /* Frameworks */,
 				8D5A4824250C777800A7C37C /* Resources */,
+				8D5A488E250C792200A7C37C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8D5A488C250C792200A7C37C /* PBXTargetDependency */,
 			);
 			name = UpBeat;
 			productName = UpBeat;
 			productReference = 8D5A4826250C777800A7C37C /* UpBeat.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8D5A486D250C791600A7C37C /* UpBeat Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D5A4895250C792200A7C37C /* Build configuration list for PBXNativeTarget "UpBeat Watch" */;
+			buildPhases = (
+				8D5A486C250C791600A7C37C /* Resources */,
+				8D5A4891250C792200A7C37C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D5A487D250C791C00A7C37C /* PBXTargetDependency */,
+			);
+			name = "UpBeat Watch";
+			productName = "UpBeat Watch";
+			productReference = 8D5A486E250C791600A7C37C /* UpBeat Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8D5A4879250C791C00A7C37C /* UpBeat Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D5A4894250C792200A7C37C /* Build configuration list for PBXNativeTarget "UpBeat Watch Extension" */;
+			buildPhases = (
+				8D5A4876250C791C00A7C37C /* Sources */,
+				8D5A4877250C791C00A7C37C /* Frameworks */,
+				8D5A4878250C791C00A7C37C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UpBeat Watch Extension";
+			productName = "UpBeat Watch Extension";
+			productReference = 8D5A487A250C791C00A7C37C /* UpBeat Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -106,6 +246,12 @@
 				ORGANIZATIONNAME = UpBeat;
 				TargetAttributes = {
 					8D5A4825250C777800A7C37C = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					8D5A486D250C791600A7C37C = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					8D5A4879250C791C00A7C37C = {
 						CreatedOnToolsVersion = 11.7;
 					};
 				};
@@ -124,6 +270,8 @@
 			projectRoot = "";
 			targets = (
 				8D5A4825250C777800A7C37C /* UpBeat */,
+				8D5A486D250C791600A7C37C /* UpBeat Watch */,
+				8D5A4879250C791C00A7C37C /* UpBeat Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +284,24 @@
 				8D5A4836250C777A00A7C37C /* LaunchScreen.storyboard in Resources */,
 				8D5A4833250C777A00A7C37C /* Preview Assets.xcassets in Resources */,
 				8D5A4830250C777A00A7C37C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5A486C250C791600A7C37C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5A4874250C791C00A7C37C /* Assets.xcassets in Resources */,
+				8D5A4872250C791600A7C37C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5A4878250C791C00A7C37C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5A4889250C792200A7C37C /* Preview Assets.xcassets in Resources */,
+				8D5A4886250C792100A7C37C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +318,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8D5A4876250C791C00A7C37C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5A4882250C791C00A7C37C /* HostingController.swift in Sources */,
+				8D5A4880250C791C00A7C37C /* ContentView.swift in Sources */,
+				8D5A4884250C791C00A7C37C /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D5A487D250C791C00A7C37C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D5A4879250C791C00A7C37C /* UpBeat Watch Extension */;
+			targetProxy = 8D5A487C250C791C00A7C37C /* PBXContainerItemProxy */;
+		};
+		8D5A488C250C792200A7C37C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D5A486D250C791600A7C37C /* UpBeat Watch */;
+			targetProxy = 8D5A488B250C792200A7C37C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8D5A4834250C777A00A7C37C /* LaunchScreen.storyboard */ = {
@@ -161,6 +350,14 @@
 				8D5A4835250C777A00A7C37C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8D5A4870250C791600A7C37C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D5A4871250C791600A7C37C /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -318,6 +515,88 @@
 			};
 			name = Release;
 		};
+		8D5A488F250C792200A7C37C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = UpBeat_Watch_Extension;
+				INFOPLIST_FILE = "UpBeat Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.upbeat.UpBeat.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		8D5A4890250C792200A7C37C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = UpBeat_Watch_Extension;
+				INFOPLIST_FILE = "UpBeat Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.upbeat.UpBeat.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		8D5A4892250C792200A7C37C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"UpBeat Watch Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "UpBeat Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.upbeat.UpBeat.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		8D5A4893250C792200A7C37C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"UpBeat Watch Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "UpBeat Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.upbeat.UpBeat.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -335,6 +614,24 @@
 			buildConfigurations = (
 				8D5A483B250C777A00A7C37C /* Debug */,
 				8D5A483C250C777A00A7C37C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D5A4894250C792200A7C37C /* Build configuration list for PBXNativeTarget "UpBeat Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D5A4892250C792200A7C37C /* Debug */,
+				8D5A4893250C792200A7C37C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D5A4895250C792200A7C37C /* Build configuration list for PBXNativeTarget "UpBeat Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D5A488F250C792200A7C37C /* Debug */,
+				8D5A4890250C792200A7C37C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
